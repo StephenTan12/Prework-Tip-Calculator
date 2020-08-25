@@ -32,6 +32,7 @@ class ViewController: UIViewController {
         let tipIndex = defaults.integer(forKey: "tipIndex")
         tipControl.selectedSegmentIndex = tipIndex
         print(tipIndex)
+        self.calculateTip(SettingsViewController.self)
     }
 
     override func viewDidAppear(_ animated: Bool) {
